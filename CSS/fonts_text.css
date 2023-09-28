@@ -1,0 +1,8 @@
+h1 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+}
+
+.pp {          /* responsive design for my profile Image allowing for image scaling */
+    width: clamp(150px, 25vw, 250px);
+    height: clamp(150px, 25vw, 250px);
+}

@@ -1,7 +1,9 @@
-
+/* HOME SECTION */
 
 body {
-  font-family: serif;                                     /* Assigning the Font used all over my site */
+  font-family: Plus Jakarta Sans;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                                                          /* Assigning the Font used all over my site */
 }
 
 .sticky-header {                                          /* Ensuring my header is Sticky and fixed as I scroll down my site */
@@ -83,4 +85,68 @@ body {
   transform: translateX(-50%);                            /* Centering the image horizontally */
   
 }
+
+/* ABOUT ME SECTION */
+
+.divider {
+  border: none;                                           /* Removes the default border */
+  height: 1px;  
+  background-color: #947F57;  
+  margin-top: 10px;  
+  margin-bottom: 10px;  
+
+}
+
+.about-me-section {
+  padding: 100px; 
+  text-align: right; 
+  max-width: 95%; 
+  margin: 0 auto; 
+}
+
+.about-me-section h2 {
+  font-size: 2rem;
+  margin-bottom: 50px; 
+  color: #3D3D3D;
+
+}
+
+.about-me-section p {
+  font-size: 1.2rem; 
+  margin-bottom: 50px; 
+  color: #3D3D3D;
+  text-align: center; 
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.about-me-buttons {
+  display: flex; 
+  gap: 20px;
+  justify-content: center; 
+}
+
+.cv-button, .contact-button {
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px;
+  background-color: #B9C2C4; 
+  color: white; 
+  cursor: pointer; 
+}
+
+.cv-button:hover, .contact-button:hover {
+  background-color: #947F57; 
+}
+
+.icon {
+  width: 20px;  
+  height: 20px; 
+  vertical-align: middle; 
+  margin-right: 10px; 
+}
+
+
+/* EDUCATION SECTION */
+
 

@@ -223,28 +223,101 @@ body {
   }
 }
 
-
-/* Skills Section */
+/* SKILLS SECTION */
 
 .skills-section {
-  padding: 100px; 
-  text-align: left; 
-  max-width: 1700px; 
-  margin: 0 auto; 
+  padding: 100px;
+  text-align: center;  /* Center the content */
+ 
+  margin: 0 auto;
 }
 
-.skills-section h2 {
-  
-  margin-bottom: 50px; 
+.skills-section h2, .skills-section p {
+  margin-bottom: 50px;
   color: #3D3D3D;
-
 }
 
 .skills-section p {
-  font-size: 1.2rem; 
-  margin-bottom: 50px; 
-  color: #3D3D3D;
-  text-align: center; 
-  padding-left: 10px;
-  padding-right: 10px;
+  font-size: 1.2rem;
+  padding: 0 10px;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(4, 120px);
+  gap: 250px;
+  justify-content: center;
+}
+
+.skill {
+  text-align: center;
+  position: relative;
+}
+
+.skill img {
+  width: 150px;
+  height: 150px;
+  margin-top: 10px;
+}
+
+.skill-circle::before, .skill-circle::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.skill-circle::before {
+  width: 250px;
+  height: 250px;
+  border: 10px solid transparent;
+  box-sizing: border-box;
+}
+
+.skill-circle::after {
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Hover Effects for the skills */
+.skill:hover .skill-circle::before {
+  border-width: 10px;
+
+}
+
+#html:hover .skill-circle::before { border-color: #F16529; }
+#css:hover .skill-circle::before { border-color: dodgerblue; }
+#javascript:hover .skill-circle::before { border-color: gold; }
+#nodejs:hover .skill-circle::before { border-color: green; }
+
+#html:hover .skill-circle::after {
+  content: '100%';
+  opacity: 1;
+}
+
+#css:hover .skill-circle::after {
+  content: '90%';
+  opacity: 1;
+}
+
+#javascript:hover .skill-circle::after {
+  content: '80%';
+  opacity: 1;
+}
+
+#nodejs:hover .skill-circle::after {
+  content: '70%';
+  opacity: 1;
+}
+
+/* Responsive Design for max-width: 700px */
+@media (max-width: 1000px) {
+  .skills-container {
+      grid-template-columns: repeat(2, 120px);
+  }
 }

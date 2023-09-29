@@ -1,7 +1,6 @@
 /* HOME SECTION */
 
 body {
-  font-family: Plus Jakarta Sans;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                                                           /* Assigning the Font used all over my site */
 }
@@ -320,4 +319,38 @@ body {
   .skills-container {
       grid-template-columns: repeat(2, 120px);
   }
+}
+
+
+/* Footer */
+
+
+footer {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.footer-left a img {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px; /* This applies a 15px gap to the left and right of each image. Adjust if necessary. */
+}
+
+.footer-left a {
+  text-decoration: none;
+  color: #333;
+  font-size: 11px;
+  transition: color 0.3s ease;
+}
+
+.footer-left a:hover {
+  color: #AFD0FF;
+}
+
+.footer-right {
+  color: #666;
+  font-size: 11px;
 }
